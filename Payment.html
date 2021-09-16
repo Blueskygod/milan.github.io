@@ -1,0 +1,55 @@
+<!Doctype html>
+<html>
+    <head>
+    <title>MILAN</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@100&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <section id="banner">
+            <img src="images/milan.png" class="logo">
+            <div class="banner-text">
+                <h1> Payment Studio </h1>
+                <p> payment with secure wallet with bitcoin wallet </p>
+                <div class="banner-btn">
+                    <a href="#"> <span></span>Find Out</a>
+                    <a href="#"> <span></span>Read More</a>
+                </div>
+            </div>
+        </section>
+        <div id="sideNav">
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Testimonials</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div id="menuBtn">
+            <img src="images/menu.png" id="menu">
+        </div>
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var sideNav = document.getElementById("sideNav")
+            var menu = document.getElementById("menu")
+
+            sideNav.style.right = "-250px";
+
+            menuBtn.onclick = function(){
+                if(sideNav.style.right == "-250px"){
+                    sideNav.style.right = "0";
+                    enu.src = "images/close.png";
+                }else{
+                    sideNav.style.right = "-250px";
+                    menu.src = "images/close.png";
+                }
+            }
+        </script>
+    </body>
+</html>
